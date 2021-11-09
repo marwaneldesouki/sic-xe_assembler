@@ -6,7 +6,7 @@ array = []
 with open(filename) as f:
     for line in f:
         if re.match(r'[ \t]', line):
-            line = line.replace("\t\t","\t")
+            line = line.replace("\t\t", "\t")
         linex = map(str, line.replace("\n", "").replace(
             ".", "").replace("â€™", "").split("\t"))
         array.append(list(linex))
@@ -19,4 +19,4 @@ for i in range(0, array.__len__()):
     except:
         print("NULL")
 
-        ######coded_with_❤_by_marwaneldesouki######
+        #######coded_with_❤_by_marwaneldesouki#######
