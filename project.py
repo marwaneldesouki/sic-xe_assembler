@@ -31,14 +31,15 @@ with open(filename) as f:
         line = line.replace("\n", "").replace(
             ".", "").replace("â€™", "").split("\t")
         old_line= line
+        print(line)
         array.append(list(map(str, line)))  # make line string type
     if not(array[-1]):  # remove last element if empty
         array.pop()
 
-for i in range(0, array.__len__()):
-    try:
-        print(array[i])
-    except:
-        print("NULL")
+# for i in range(0, array.__len__()):
+#     try:
+#         print(array[i])
+#     except:
+#         print("NULL")
 
         #######coded_with_❤_by_marwaneldesouki#######
