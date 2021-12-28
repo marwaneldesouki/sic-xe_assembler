@@ -1,0 +1,1 @@
+res = hex(int(charRegex[0]))[2:].zfill(3)
